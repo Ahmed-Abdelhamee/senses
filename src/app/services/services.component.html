@@ -1,18 +1,5 @@
 
 <div class="col-12 content">
-    <svg xmlns="http://www.w3.org/2000/svg" class="svg1" width="100%" viewBox="0 0 1920 1134" fill="none">
-        <g filter="url(#filter0_f_143_7216)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M974.124 -101.219C1030.48 -84.5329 1077.94 -57.2883 1133.06 -37.7737C1203.93 -12.6814 1316.94 -31.9909 1344.17 29.7924C1372.15 93.2813 1270.7 145.648 1241.72 208.8C1221.35 253.172 1226.25 302.414 1199.81 344.334C1168.25 394.378 1140 461.593 1075.25 472.755C1009.43 484.1 962.664 414.674 899.061 396.175C839.23 378.774 771.652 394.573 716.304 368.359C646.158 335.136 573.775 293.383 545.594 228.765C515.562 159.904 529.611 81.2422 561.297 12.9354C593.867 -57.2764 641.78 -135.446 725.249 -158.527C808.705 -181.604 891.233 -125.764 974.124 -101.219Z" fill="#42A4FF" fill-opacity="0.6"/>
-        </g>
-        <defs>
-        <filter id="filter0_f_143_7216" x="-130.867" y="-823.867" width="2139.73" height="1957.73" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-        <feGaussianBlur stdDeviation="329.933" result="effect1_foregroundBlur_143_7216"/>
-        </filter>
-        </defs>
-    </svg>
-
     <div class="col-sm-5 left-text">
         <p> We continually strive with utmost excellence in everything we do. Therefore, we are looking for ideas that challenge traditional viewpoints and stimulate innovation. We must continuously keep pace with modernity and innovation in the world of digital technologies, using the latest technologies in artificial intelligence Ideas.  </p>
     </div>
@@ -20,13 +7,12 @@
         <img src="assets/Frame(2).png" alt="">
     </div>
 
-    <div class="col-12">
+    <div class="col-12 list">
         <div  class="list-content">
-            <div *ngFor="let item of texts">
-                <div class="line"></div>
+            <div class="item" *ngFor="let item of texts">
+                <button class="discover">Discover</button>
                 <p class="item-style">{{item}}</p>
             </div>
-            <div class="line"></div>
         </div>
     </div>
 

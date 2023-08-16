@@ -1,0 +1,415 @@
+*{
+    box-sizing: border-box;
+
+}
+[class*="col-"]{
+    float: left;
+    width: 100%;
+}
+
+$mainColor: #200F2B;
+$globalColor: #042c42;
+$SeconadryColor: #5b148a;
+$primari-color: #43868E;
+
+@media screen and (max-width:800px) {
+    div.col-12{
+        padding: 5px;
+    }
+    div div .imgs img{
+        height: 25px;
+    }    
+    div div div .btns{
+        display: block;
+    }
+    div div div .text1{
+        font-size: 19px;
+        line-height: 27px;
+    }
+    div div div .text2{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    div div div .paragraph{
+        font-size: 16px;
+        line-height: 34px;
+        margin-top: 23px;
+    }
+    div div div .show{
+        padding: 7px 35px;
+    }
+    div div .right-side{
+        margin-bottom: 0px;
+    }
+    div div .right-side img{
+        height: 300px;
+    }
+    div div .right-side img:nth-of-type(1){
+        height: 450px;
+    }
+    div div .imgs{
+        margin-top: -50px;
+    }
+    div div div .text2.text-center{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    div div .lightning-view .container{
+        display: block;
+    }
+    div div .lightning-view .container .card{
+        margin-bottom: 60px;
+    }
+    div div div .btns button{
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    div div div .our-services{
+        padding: 2px;
+    }
+    div div div div .leftSide{
+        padding: 0px;
+        margin: 0px;
+    }
+    div div div div .leftSide img{
+        height: 300px;
+        width: 100%;
+        margin: 0px;
+    }
+    div div div div .leftSide img:nth-of-type(2){
+        height: 450px;
+        width: 140%;
+        margin: 0px;
+    }
+    div div div div div .text2{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    div div .Contact-Us div img{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    div div div div .leftSide{
+        margin-bottom: -35%;
+    }
+    div div .Our-Portfolio div div div img:nth-of-type(2),
+    div div .Our-Portfolio div div div img:nth-of-type(3){
+        height: 25px;
+        width: 25px;
+        margin: 0px;
+        left: -27px;
+        top: 27%;
+    }
+    div div .Our-Portfolio div div div img:nth-of-type(3){
+        left: 100%;
+    }
+
+}
+@media screen and (max-width:500px) {
+    div div .imgs img{
+        height: 20px;
+        width: fit-content;
+    }    
+    div div .imgs img:nth-of-type(2),
+    div div .imgs img:nth-of-type(5)
+    {
+        width: 15%;
+    } 
+    div div .imgs img:nth-of-type(3)
+    {
+        width: 10%;
+    } 
+    div div .imgs img:nth-of-type(4)
+    {
+        width: 25%;
+    } 
+    div div .imgs img:nth-of-type(6),
+    div div .imgs img:nth-of-type(7),
+    div div .imgs img:nth-of-type(8),
+    div div .imgs img:nth-of-type(9)
+    {
+        display: none;
+    }  
+}
+.content{
+    // background-image: linear-gradient(90deg,$mainColor,$SeconadryColor);
+    background-image: linear-gradient(152deg, $mainColor, $globalColor,$mainColor, $SeconadryColor);
+    padding: 10px;
+}
+.fristPart{
+    padding: 10px 5%;
+    padding-right: 0%;
+}
+.right-side {
+    position: relative;
+}
+.right-side img{
+    width: 100%;
+    height: 950px;
+}
+.right-side img:nth-of-type(2){
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 70%;
+    height: 454px;
+    margin-left: 15%;
+}
+.text1{
+    color: $primari-color;
+    font-family: Poppins;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 44px; /* 359.259% */
+    letter-spacing: 2.7px;
+}
+.text2{
+    color: #BCA7CA;
+    font-family: Poppins;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 276;
+    line-height: 72px;
+}
+.paragraph{
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    margin-top: 38px;
+    color: #95bfc1;
+}
+.show{
+    background: none;
+    padding: 12px 84px;
+    box-shadow: inset 1px 1px 7px #008fb4;
+    color: #FFFFFF;
+    border-radius: 30px;
+    outline: none;
+    transition: 1s;
+}
+.show:hover{
+    background-image: linear-gradient(128deg, #69368A 0%, #00C6C9 100%);
+}
+.container{
+    margin-bottom: 10%;
+}
+.imgs{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -300px;
+    margin-bottom: 100px;
+}
+.imgs img{
+    width: 4%;
+    height: 40px;
+    margin-top: 5px;
+}
+.imgs img:nth-of-type(2){
+    width: 11%;
+}
+.imgs img:nth-of-type(3),
+.imgs img:nth-of-type(8)
+{
+    width: 5%;
+}
+.imgs img:nth-of-type(4){
+    width: 12%;
+}
+.imgs img:nth-of-type(5),
+.imgs img:nth-of-type(7){
+
+    width: 6%;
+}
+.imgs img:nth-of-type(6){
+    width: 13%;
+}
+.imgs img:nth-of-type(9){
+    width: 7%;
+}
+
+.lightning-view{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.leftLightning,
+.rightLightning{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    height: 500px;
+    margin-top: -10%;
+}
+.rightLightning{
+    left: 50%;
+}
+.lightning-view .container{
+    display: flex;
+    justify-content: space-between;
+}
+.lightning-view .card{
+    background-color: $mainColor;
+    border-radius: 47px;
+    background: rgba(33, 57, 94, 0.50);
+    backdrop-filter: blur(10.5px);
+    margin-bottom: 40px;
+}
+.lightning-view .card img{
+    margin-top: -44px;
+    height: 136px;
+    width: 59%;
+    margin-left: 27%;
+}
+.lightning-view .card .card-title{
+    color: #759CFF;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+.lightning-view .card .card-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.our-services{
+    background: rgba(25, 19, 47, 0.70);
+    margin-top: 30px;
+    border-radius: 25px;
+    padding: 30px;
+}
+.our-services .leftSide{
+    position: relative;
+    z-index: 2;
+}
+.our-services .leftSide img,
+.Our-Portfolio .leftSide img{
+    width: 90%;
+    height: 390px;
+}
+.our-services .text2,
+.Our-Portfolio .details{
+    font-size: 16px;
+    line-height: 31px;
+    color: white;
+}
+.our-services .leftSide img:nth-of-type(2){
+    position: absolute;
+    width: 129%;
+    top: -23%;
+    left: -18%;
+    z-index: -1;
+    height: 150%;
+}
+.Our-Portfolio .leftSide{
+    height: 480px;
+    position: relative;
+    margin-top: 40px;
+    padding: 25px;
+}
+
+.Our-Portfolio .leftSide img{
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+}
+.Our-Portfolio .leftSide .imgLeft,
+.Our-Portfolio .leftSide .imgRight{
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    left: -5%;
+}
+.Our-Portfolio .leftSide .imgRight{
+    left: 88%;
+}
+.Our-Portfolio .container .text2{
+    font-size: 30px;
+    font-family: Poppins;
+}
+ .btns{
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    margin-bottom: 40px;
+}
+.Our-Portfolio .container .btns .show{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.Our-Portfolio .container .col-sm-6 .btns .show{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Our-Clients{
+    margin-top: 50px;
+    margin-bottom: 0%;
+}
+.imgs2 {
+    position: relative;
+    margin-top: 20px;
+}
+.imgs2 img{
+    height: 100px;
+}
+.imgs2 img:nth-of-type(1),
+.imgs2 img:nth-of-type(7){
+    height: 35px;
+    width: 35px;
+    margin-top: 25px;
+}
+.Contact-Us{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.Contact-Us div img{
+    width: 100%;
+    border-radius:25px;
+    height: 428px;
+}
+.Contact-Us .right-side{
+    display: block;
+}
+input,textarea{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 17px;
+    padding: 13px 30px;
+    margin-bottom: 14px;
+    border-radius: 37px;
+    background: none;
+    color: #FFF;
+    font-family: Poppins;
+    border: none;
+    box-shadow: inset 1px 1px 1px #aa00e5, inset -1px -1px 1px #6990b1;
+}
+input::placeholder{
+    color: rgb(222, 222, 222);
+}
+
+
+
+
+
+
+
+
+

@@ -7,6 +7,12 @@
     float: left;
     width: 100%;
 }
+
+$mainColor: #200F2B;
+$globalColor: #042c42;
+$SeconadryColor: #5b148a;
+$primari-color: #43868E;
+
 @media screen and (max-width:1120px) {
     div .svg1{
         width: 100%;
@@ -27,28 +33,64 @@
     div div .list-content{
         margin-top: 0px;
     }
-    div div div div .item-style{
+
+}
+@media screen and (max-width:700px) {
+    div div div .item p{
         font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 13px;
+    }
+    div div div .item:hover p{
+        transform: translateX(12px)
+    }
+    div div div .item button{
+        width: 25%;
+        margin-right: -5px;
+        padding: 5px 15px;
+        padding-left: 7px;
+        font-size: 10px;
+        margin-top: 17px;
+        margin-top: 10px;
+    }
+    div div div .item button::after{
+        top: 28%;
+        height: 0px;
+        width: 0px;
+        border-width: 6px;
     }
 }
-
+@media screen and (max-width:400px) {
+    div div div .item p{
+        font-size: 15px;
+    }
+    div div div .item button{
+        font-size: 9px;
+        padding-left: 5px;
+    }
+    div div div .item button::after{
+        right: 0px;
+    }
+}
 .content{
-    // background-image: linear-gradient(90deg,#200F2B,#5b148a);
-    background-image: linear-gradient(152deg, #200F2B, #5b148a,#200F2B, #5b148a);
-    padding: 10px 5%;
+    // background-image: linear-gradient(90deg,$mainColor,$SeconadryColor);
+    background-image: linear-gradient(130deg, $mainColor, $globalColor, $mainColor, $globalColor);
+        padding: 10px 5%;
 }
-.svg1{
-    position: absolute;
-    width: 72%;
-    top: 0px;
-    left: 20%;
-}
+// .svg1{
+//     position: absolute;
+//     width: 72%;
+//     top: 0px;
+//     left: 20%;
+//     z-index: 1;
+// }
 .svg2{
     position: absolute;
     top: 28%;
     left: -23%;
     height: 680px;
     flex-shrink: 0;
+    z-index: 1;
 }
 .svg3{
     width: 236.931px;
@@ -60,6 +102,7 @@
 .left-text{
     padding: 100px 5px;
     font-size: 22px;
+    z-index: 2;
 }
 .left-text p{
     color: #FFF;
@@ -75,23 +118,56 @@ img{
     padding-left: 0px;
     height: 690px;
 }
-.line{
-    position: relative;
-    width: 107%;
-    background-color: #bcbcbc;
-    height: 0.5px;
-    opacity: .7;
+.list{
+    z-index: 2;
 }
-
 .list-content{
     margin-top: -140px;
+    border-bottom: .5px solid #7d7474 ;
 }
-.item-style{
+.item p{
     color: #FFF;
     font-family: Poppins;
     font-size: 22px;
     font-style: normal;
-    padding: 10px;
-    padding-top: 17px;
+    padding: 20px;
     padding-left: 30px;
+    border-top: .5px solid #7d7474 ;
+    margin-bottom: 0px;
+    transition: 1s;
+}
+.item:hover p{
+    transform: translateX(25px);
+    background-image: linear-gradient(150deg, rgb(156, 0, 156), rgb(4, 137, 204));
+    opacity: .7;
+}
+.discover{
+    position: relative;
+    background-color:  rgb(4, 137, 204);
+    float: right;
+    border-radius: 25px;
+    padding: 6px 37px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    color: white;
+    margin: 9px 40px;
+    z-index: 2;
+    display: none;
+    margin-top: 15px;
+    border: navajowhite;
+    box-shadow: inset 3px 2px 4px antiquewhite;
+}
+.discover::after{
+    position: absolute;
+    content: "";
+    top: 28%;
+    right: 11%;
+    height: 0px;
+    width: 0px;
+    border-width: 9px;
+    border-color: transparent transparent transparent aliceblue;
+    border-style: solid;
+}
+.item:hover .discover{
+    display: block;
 }
