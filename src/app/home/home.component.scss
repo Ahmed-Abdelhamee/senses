@@ -60,6 +60,12 @@ $primari-color: #43868E;
     div div .lightning-view .container .card{
         margin-bottom: 60px;
     }
+    div div .lightning-view .container .card img{
+        margin-top: -44px;
+        height: 101px;
+        width: 48%;
+        margin-left: 30%;
+    }
     div div div .btns button{
         margin-bottom: 10px;
         padding-left: 20px;
@@ -79,7 +85,7 @@ $primari-color: #43868E;
     }
     div div div div .leftSide img:nth-of-type(2){
         height: 450px;
-        width: 140%;
+        width: 120%;
         margin: 0px;
     }
     div div div div div .text2{
@@ -90,8 +96,14 @@ $primari-color: #43868E;
         height: 300px;
         margin-bottom: 20px;
     }
-    div div div div .leftSide{
-        margin-bottom: -35%;
+    div div div .our-services{
+        margin-bottom: 15%;
+    }
+    div div div .our-services .leftSide{
+        margin-bottom: 20px;
+    }
+    div div .Our-Portfolio div div .leftSide{
+        height: 400px;
     }
     div div .Our-Portfolio div div div img:nth-of-type(2),
     div div .Our-Portfolio div div div img:nth-of-type(3){
@@ -103,6 +115,20 @@ $primari-color: #43868E;
     }
     div div .Our-Portfolio div div div img:nth-of-type(3){
         left: 100%;
+    }
+
+    div div .Our-Clients div img{
+        height: 40px;
+    }
+    div div .Our-Clients div img:nth-of-type(1){
+        height: 20px;
+        margin-top: 15px;
+    }
+    div div .Our-Clients div img:nth-of-type(7){
+        height: 20px;
+        margin-top: 15px;
+        left: 20px;
+        display: block;
     }
 
 }
@@ -287,6 +313,7 @@ $primari-color: #43868E;
     font-weight: 300;
     line-height: 25px;
     padding-bottom: 25px;
+    text-shadow: 0px 0px 5px black;
 }
 .our-services{
     background: rgba(25, 19, 47, 0.70);
