@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { RpaComponent } from './rpa/rpa.component';
+import { IotComponent } from './iot/iot.component';
+import { DigitalComponent } from './digital/digital.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     ServicesComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    RpaComponent,
+    IotComponent,
+    DigitalComponent
   ],
   imports: [
     BrowserModule,
