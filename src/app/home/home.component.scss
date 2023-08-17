@@ -245,12 +245,14 @@ $primari-color: #43868E;
 }
 .show{
     background: none;
-    padding: 12px 84px;
-    box-shadow: inset 1px 1px 7px #008fb4;
+    padding: 12px 67px;
+    box-shadow: inset 0.2px 0.2px 1px #be00ff, inset -1px 0px 2px #00faff;
+    // box-shadow: inset 1px 0px 1px #69368A, inset -1px 0px 2px #00C6CA;
     color: #FFFFFF;
     border-radius: 30px;
     outline: none;
     transition: 1s;
+    border: none;
 }
 .show:hover{
     background-image: linear-gradient(128deg, #69368A 0%, #00C6C9 100%);
@@ -366,6 +368,7 @@ $primari-color: #43868E;
     margin-top: 30px;
     border-radius: 25px;
     padding: 30px;
+    margin-bottom: 10%;
 }
 .our-services .leftSide{
     position: relative;
@@ -398,8 +401,8 @@ $primari-color: #43868E;
 }
 
 .Our-Portfolio .leftSide img{
-    height: 100%;
-    width: 90%;
+    height: 480px;
+    width: 85%;
     margin-left: 9%;
 }
 .Our-Portfolio .leftSide .imgLeft,
@@ -411,7 +414,7 @@ $primari-color: #43868E;
     left: 0%;
 }
 .Our-Portfolio .leftSide .imgRight{
-    left: 88%;
+    left: 57%;
 }
 .Our-Portfolio .container .text2{
     font-size: 30px;
@@ -421,21 +424,44 @@ $primari-color: #43868E;
     display: flex;
     justify-content: space-around;
     transition: 1s;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+}
+.Our-Portfolio .container .rightSide{
+    padding-top: 10%;
+}
+.Our-Portfolio .container .rightSide .text1{
+    color: #B284FF;
+    font-weight: 600;
+    padding-left: 25px;
+}
+.Our-Portfolio .container .rightSide .details{
+    color: #FFF;
+    font-family: Poppins;
+    padding-left: 25px;
+    line-height: 35px;
+}
+.Our-Portfolio .container .rightSide .show{
+    margin-left: 25px;
 }
 .Our-Portfolio .container .btns .show{
     padding-left: 5%;
     padding-right: 5%;
 }
 .Our-Portfolio .container .col-sm-6 .btns .show{
-    padding: 0px;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding: 7px;
+    padding-left: 8%;
+    padding-right: 9%;
     margin-left: 1%;
+    background-color: rgba(105, 54, 138, 0.30);;
 }
+
 .Our-Clients{
     margin-top: 10%;
     margin-bottom: 0%;
+}
+.Our-Clients .text2{
+    font-size: 41px;
+    line-height: 60px;
 }
 .imgs2 {
     position: relative;
@@ -463,14 +489,23 @@ $primari-color: #43868E;
     padding: 0;
     margin: 0;
 }
-.Contact-Us div img{
-    width: 100%;
-    border-radius:25px;
-    height: 428px;
+.Contact-Us .text2{
+    font-size: 41px;
+    line-height: 60px;
+}
+.Capture{
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    left: -5%;
+    width: 50%;
+    height: 600px;
 }
 .Contact-Us .right-side{
     display: block;
+    padding: 20px 50px;
 }
+
 input,textarea{
     width: 90%;
     margin-left: 5%;
@@ -487,7 +522,20 @@ input,textarea{
 input::placeholder{
     color: rgb(222, 222, 222);
 }
-
+.send{
+    color: white;
+    font-family: Poppins;
+    font-size: 16.745px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.795px;
+    background-image: linear-gradient(128deg, #69368A 0%, #00C6C9 100%);
+    border-radius: 25px;
+    padding: 5px 7%;
+    border: none;
+    float: right;
+    margin-right: 20px;
+}
 
 
 
