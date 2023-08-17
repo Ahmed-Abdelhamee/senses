@@ -132,8 +132,12 @@ $primari-color: #43868E;
         left: 20px;
         display: block;
     }
-    div div .Contact-Us div img{
+    div div .Contact-Us .Capture{
         display: none;
+    }
+    div div .Contact-Us .right-side{
+        padding: 10px;
+        margin-bottom: 20px;
     }
     div div .Contact-Us .right-side form input{
         font-size: 11px;
