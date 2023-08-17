@@ -15,11 +15,20 @@ $primari-color: #43868E;
 @media screen and (max-width:700px) {
     div.col-12{
         display: block;
-        padding-bottom: 300px;
+        padding-bottom: 100px;
     }
-    div .col-sm-3,
-    div .col-sm-4{
-        margin-bottom: 25px
+    div .col-sm-3{
+        margin-bottom: 5px
+    }
+    div div .text{
+        text-align: center;
+    }
+    div div ul{
+        list-style: none;
+        padding-left: 10%;
+    }
+    div div ul .link{
+        font-size: 13px;
     }
 }
 
@@ -27,10 +36,10 @@ $primari-color: #43868E;
     background-color: #16092B;
     padding: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.text1{
+.text{
     color: $primari-color;
     font-family: Poppins;
     font-size: 27px;
@@ -41,27 +50,36 @@ $primari-color: #43868E;
 }
 ul{
     list-style: none;
+    padding-left: 0;
 }
-.link{
+.link,
+.Copyright{
     color: #DFF7FA;
     font-family: Poppins;
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    line-height: 39px;
 }
-
 .senses{
     width: 100%;
     margin-bottom: 25px;
 }
+.icons{
+    display: flex;
+    justify-content: center;
+}
 .icon{
-    width: 26.053px;
-    height: 26.053px;
+    width: 30.053px;
+    height: 30.053px;
     margin-bottom: 20px;
+    margin-left: 15px;
+}
+.Copyright{
+    color: #6354c1;
+    font-size: 11px;
+    font-weight: 600;
 }
 
-.list2{
-    padding-left: 0;
-}
 
