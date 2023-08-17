@@ -58,7 +58,6 @@ $primari-color: #43868E;
         font-size: 20px;
         line-height: 35px;
     }
-   
     
     div div div .our-services{
         padding: 2px;
@@ -67,17 +66,6 @@ $primari-color: #43868E;
         padding: 0px;
         margin: 0px;
         margin-bottom: 35px;
-    }
-    div div div div .leftSide img{
-        height: 100%;
-        width: 90%;
-        margin: 0px;
-        margin-left: 5%;
-    }
-    div div div div .leftSide img:nth-of-type(2){
-        height: 450px;
-        width: 120%;
-        margin: 0px;
     }
     div div div div div .text2{
         font-size: 14px;
@@ -92,6 +80,19 @@ $primari-color: #43868E;
     div div .Our-Portfolio div div .leftSide{
         height: 360px;
     }
+    div div div .our-services .leftSide img{
+        height: 100%;
+        width: 90%;
+        margin: 0px;
+        margin-left: 5%;
+        margin-top: 25px;
+    }
+    div div div .our-services .leftSide img:nth-of-type(2){
+        height: 445px;
+        width: 124%;
+        margin: 0px;
+        padding-left: 5%;
+    }
     div div div div .btns{
         display: flex;
         justify-content: space-between;
@@ -100,6 +101,11 @@ $primari-color: #43868E;
         margin-bottom: 10px;
         font-size: 9px;
         padding: 10px 5%;
+    }
+    div div .Our-Portfolio div div div div img{
+        height: 340px;
+        width: 98%;
+        margin-left: 1%;
     }
     div div .Our-Portfolio div div div div button .imgLeft,
     div div .Our-Portfolio div div div div button .imgRight{
@@ -148,8 +154,8 @@ $primari-color: #43868E;
     div div .lightning-view .container .card img{
         margin-top: -44px;
         height: 101px;
-        width: 48%;
-        margin-left: 30%;
+        width: 44%;
+        margin-left: 32%;
     }
       
     div div .imgs img:nth-of-type(6),
@@ -278,28 +284,28 @@ $primari-color: #43868E;
     width: 35px;
 }
 
-// .imgs img:nth-of-type(2){
-//     width: 11%;
-// }
-// .imgs img:nth-of-type(3),
-// .imgs img:nth-of-type(8)
-// {
-//     width: 5%;
-// }
-// .imgs img:nth-of-type(4){
-//     width: 12%;
-// }
-// .imgs img:nth-of-type(5),
-// .imgs img:nth-of-type(7){
+.imgs img:nth-of-type(2){
+    width: 11%;
+}
+.imgs img:nth-of-type(3),
+.imgs img:nth-of-type(8)
+{
+    width: 5%;
+}
+.imgs img:nth-of-type(4){
+    width: 12%;
+}
+.imgs img:nth-of-type(5),
+.imgs img:nth-of-type(7){
 
-//     width: 6%;
-// }
-// .imgs img:nth-of-type(6){
-//     width: 13%;
-// }
-// .imgs img:nth-of-type(9){
-//     width: 7%;
-// }
+    width: 6%;
+}
+.imgs img:nth-of-type(6){
+    width: 13%;
+}
+.imgs img:nth-of-type(9){
+    width: 7%;
+}
 
 .lightning-view{
     position: relative;
@@ -442,6 +448,8 @@ $primari-color: #43868E;
 .imgs2 img:nth-of-type(1),
 .imgs2 img:last-of-type{
     margin-top: 30px;
+    width: 4%;
+    height: 35px;
 }
 // for side animation
 // .imgs2 img:nth-of-type(2){
