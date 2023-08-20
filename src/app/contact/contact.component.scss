@@ -1,72 +1,226 @@
 
 *{
     box-sizing: border-box;
-    padding: 0px;
+
 }
 [class*="col-"]{
     float: left;
     width: 100%;
 }
+$mainColor: #200F2B;
+$globalColor: #042c42;
+$SeconadryColor: #5b148a;
+$primari-color: #43868E;
 
+
+@media screen and (max-width:1050px) {
+    div.col-12 nav .Frame{
+        left: 15%;
+        width: 72%;
+        height: 50px;
+    }
+       
+}
+@media screen and (max-width:600px){
+    div div.frist-part{
+        padding: 5px;
+    }
+    div div.frist-part img{
+        position: relative;
+        height: 184px;
+        width: 100%;
+        top: 0;
+    }
+    div div.frist-part .contact-text{
+        color: #BCA7CA;
+        font-size: 7.1vw;
+        font-weight: 275;
+        padding-top: 32px;
+        text-align: center;
+        margin-left: 0%;
+    } 
+
+    .col-12.second-content{
+        padding: 7px;
+    }
+    div div.second-part{
+        padding: 4px;
+        padding-top: 30px;
+        border-radius: 10px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    div div.second-part form{
+        margin-left: 0%;
+    }
+    div div.second-part .icons{
+        margin-left: -15px;
+    }
+    div div.second-part .icons .icon{
+        width: 30.053px;
+        height: 30.053px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 43px;
+    }
+
+    div div form input,
+    div div form textarea{
+        font-size: 14px;
+        border-radius: 16px;
+    }
+    div div form .send{
+        font-size: 11px;
+        padding: 4px 6%;
+    }
+    div div div .icons{
+        margin-left: 0px;
+    }
+    div div div .icons{
+        margin-left: 0px;
+    }
+    div div div .icons ul{
+        padding-left: 0%;
+    }
+    div div div .icons ul li .link .icon{
+        margin-left: 13px;
+    }
+
+    div div .Capture{
+        display: none;
+    }
+    div.col-12 .Capture2{
+        display: block;
+    }
+}
+
+// ----------------------------  header start  ----------------------------
+.header{
+    padding: 35px 4%;
+    padding-top: 30px;
+    color: #fff;
+    background-image: linear-gradient(81deg, #200F2B, #11557a,#4c0066);
+}
+.navbar-dark{
+    border: none;
+    box-shadow: none;
+}
+span{
+    display: inline-block;
+}
+.logo1,.logo2{
+    margin: 10px;
+    z-index: 2;
+}
+.logo1 img{
+    height: 54px;
+}
+.logo2 img{
+    width: 130px;
+    height: 39.404px;
+}
+.logo3 img{
+    margin-left: 35px;
+    height: 54px;
+    width: 135px;
+}
+.links{
+    position: absolute;
+    right: 0;
+}
+.navbar-toggler{
+    color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    margin-left: 25px;
+    color: white;
+    font-weight: 400;
+}
+.Frame{
+    position: absolute;
+    width: 52%;
+    height: 124px;
+    left: 31%;
+    top: -30px;
+    z-index: 0;
+}
+.Frame img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+// --------------------------------------------------------------------
+
+
+
+
+// ---------------------------- page style ----------------------------
+.content{
+    background-image: linear-gradient(81deg, #200F2B, #07486b);
+    padding: 0%;
+    margin: 0%;
+}
 .frist-part{
+    position: relative;
     background-color: #210E3A;
     padding: 0%;
     margin: 0%;
-    height: 251px;
+    height: 285px;
     width: 100%;
+    padding-right: 40px;
+    z-index: 2;
 }
 .frist-part img{
-    position: absolute;
-    right: 9%;
+    position: relative;
     height: 334px;
-    top: -5%;
+    width: 100%;
+    top: -14px;
+    padding-right: 30px;
 }
 .frist-part .contact-text{
     color: #BCA7CA;
     font-family: Poppins;
-    font-size: 79px;
+    font-size: 4.2vw;
     font-style: normal;
     font-weight: 275;
-    line-height: 97px; 
+    margin-left: 18%;
+    padding-top: 80px;
 }
-
-
 
 .second-part{
+    position: relative;
     border-radius: 47px;
-    background: rgba(23, 2, 51, 0.80);
+    // background: rgba(26 0 60 / 69%);
+    background-color: rgba(23, 2, 51, 0.80);
+    -webkit-backdrop-filter: blur(10.5px);
     backdrop-filter: blur(10.5px);
-    padding-top: 40px 15px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin-top: -70px;
+    margin-left: 11%;
+    margin-bottom: 40px;
+    z-index: 4;
 }
-
-.Capture{
-    vertical-align: middle;
-    border-style: none;
-    position: absolute;
-    left: -5%;
-    width: 50%;
-    height: 600px;
+.second-part form{
+    margin-left: 25%;
+    margin-bottom: 25px;
+    width: 100%;
 }
-.Contact-Us .right-side{
-    display: block;
-    padding: 20px 50px;
-}
-
 input,textarea{
     width: 90%;
     margin-left: 5%;
     font-size: 17px;
-    padding: 13px 30px;
+    padding: 10px 30px;
     margin-bottom: 14px;
     border-radius: 37px;
     background: none;
     color: #FFF;
     font-family: Poppins;
     border: none;
-    box-shadow: inset 1px 1px 1px #aa00e5, inset -1px -1px 1px #6990b1;
+    box-shadow: inset 0.2px 0.2px 1px #ad008a, inset -1px 0px 2px #00faff;
 }
-input::placeholder{
-    color: rgb(222, 222, 222);
+input::placeholder,textarea::placeholder{
+    color: white;
 }
 .send{
     color: white;
@@ -77,16 +231,62 @@ input::placeholder{
     line-height: 28.795px;
     background-image: linear-gradient(128deg, #69368A 0%, #00C6C9 100%);
     border-radius: 25px;
-    padding: 5px 7%;
+    padding: 4px 5.5%;
     border: none;
     float: right;
     margin-right: 20px;
+    text-transform: capitalize;
+}
+ul{
+    list-style: none;
+    padding: 20;
+    display: inline-flex;
+}
+.link{
+    color: #DFF7FA;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    line-height: 39px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-left: -40px;
+}
+.icon{
+    width: 45.053px;
+    height: 50.053px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.insta{
+    padding: 4px;
 }
 
-
-
-
-
+.Capture,
+.Capture2{
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 450px;
+    z-index: 3;
+    filter: invert(92%);
+    // filter:hue-rotate(45deg);
+}
+.Capture2{
+    display: none;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    height: 270px;
+}
 
 
 

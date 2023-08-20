@@ -1,12 +1,11 @@
-
+<app-header></app-header>
 <div class="col-12 content">
-    
     <div class="col-12 fristPart">
         <div class="col-sm-6">
             <p class="text1">Our mission</p>
             <p class="text2">Think <br> Forward</p>
             <p class="paragraph">To be the partner of choice for the region’s leading services providers, government and enterprises by helping them create, build and maintain the most innovative, reliable cost-effective solution that meet their customers’ growing needs with a local flavor.</p>
-            <button class="show">Discover</button>
+            <button class="show" id="show">Discover</button>
         </div>
         <div class="col-sm-6 right-side">
             <img src="assets/FrameHome1.png" alt="">
@@ -20,6 +19,7 @@
             <img src="{{item}}" *ngFor="let item of imgs" alt=""  >
             <img src="assets/Arrow_drop_down (1).png" alt="layer photo" (click)="right()">
         </div>
+
         <div class="container">
             <p class="text1 text-center"> Our Values </p>
             <p class="text2 text-center">  Our journey to Make difference </p>
@@ -70,8 +70,7 @@
                 </div>
             </div>
         </div>
-
-
+                  
         <div class="col-12 Our-Portfolio">
             <div class="container">
                 <p class="text1 text-center"> Our Portfolio </p>
@@ -117,6 +116,10 @@
                     </div>
                 </div>
             </div>
+            <!-- imgs static -->
+            <img src="assets/Rectangle2.png" alt="" class="Rectangle2">                    
+            <img src="assets/Rectangle3.png" alt="" class="Rectangle3">  
+            <img src="assets/Rectangle3.png" alt="" class="Rectangle4">  
         </div>
 
         <div class="col-12 container Our-Clients">
@@ -132,25 +135,31 @@
         <div class="col-12 Contact-Us">
             <p class="text1 text-center"> Contact Us</p>
             <p class="text2 text-center"> Let’s keep In Touch</p>
-            <div class="col-sm-6" style="height: 10px;"></div>
-            <img src="assets/Capture.PNG" alt="Capture" class="Capture">
-            <div class="col-sm-6 right-side">
-                <form action="#">
-                    <div class="input-style">
-                        <input type="text" name="" id="" placeholder="Your name">
-                    </div>
-                    <div class="input-style">
-                        <input type="text" name="" id="" placeholder="Your Email address">
-                    </div>
-                    <div class="input-style">
-                        <input type="text" name="" id="" placeholder="Phone Number">
-                    </div>
-                    <div class="input-style">
-                        <input type="text" name="" id="" placeholder="Subject">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="message"></textarea>
-                    <button type="submit" class="send">send</button>
-                </form>
+            <div class="shape">
+                <img src="assets/shape.png" alt="shape" class="shape">
+            </div>
+            <!-- <img src="assets/Capture.PNG" alt="Capture" class="Capture"> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152201.4786021608!2d-2.91605875!3d53.4121774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adf8a647060b7%3A0x42dc046f3f176e01!2sLiverpool%2C%20UK!5e0!3m2!1sen!2seg!4v1692358139914!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="Capture"></iframe>
+            <div class="col-12 global-side">
+                <div class="col-sm-6" style="height: 10px;"></div>
+                <div class="col-sm-6 right-side">
+                    <form action="#">
+                        <div class="input-style">
+                            <input type="text" name="" id="" placeholder="Your name">
+                        </div>
+                        <div class="input-style">
+                            <input type="text" name="" id="" placeholder="Your Email address">
+                        </div>
+                        <div class="input-style">
+                            <input type="text" name="" id="" placeholder="Phone Number">
+                        </div>
+                        <div class="input-style">
+                            <input type="text" name="" id="" placeholder="Subject">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="message"></textarea>
+                        <button type="submit" class="send">send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
