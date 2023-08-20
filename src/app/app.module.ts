@@ -7,7 +7,12 @@ import { HeaderComponent } from './header/header.component';
 import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { RpaComponent } from './rpa/rpa.component';
+import { IotComponent } from './iot/iot.component';
+import { DigitalComponent } from './digital/digital.component';
 import { ContactComponent } from './contact/contact.component';
+import { TrackingComponent } from './tracking/tracking.component';
+import { RfidComponent } from './rfid/rfid.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { ContactComponent } from './contact/contact.component';
     ServicesComponent,
     FooterComponent,
     HomeComponent,
-    ContactComponent
+    RpaComponent,
+    IotComponent,
+    DigitalComponent,
+    ContactComponent,
+    TrackingComponent,
+    RfidComponent
   ],
   imports: [
     BrowserModule,
