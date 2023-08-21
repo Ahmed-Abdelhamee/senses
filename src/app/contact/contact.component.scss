@@ -22,6 +22,11 @@ $primari-color: #43868E;
        
 }
 @media screen and (max-width:600px){
+
+    div nav div .links{
+        position: relative;
+        float: right;
+    }
     div div.frist-part{
         padding: 5px;
     }
@@ -85,7 +90,6 @@ $primari-color: #43868E;
     div div div .icons ul li .link .icon{
         margin-left: 13px;
     }
-
     div div .Capture{
         display: none;
     }

@@ -89,14 +89,15 @@ $primari-color: #43868E;
         height: 100%;
         width: 90%;
         margin: 0px;
-        margin-left: 5%;
-        margin-top: 25px;
+        margin-left: 2%;
+        margin-top: 33px;
     }
     div div div .our-services .leftSide img:nth-of-type(2){
-        height: 445px;
-        width: 124%;
+        height: 120%;
+        width: 109%;
         margin: 0px;
-        padding-left: 5%;
+        padding-left: 2%;
+        top: -15px;
     }
     div div div div .btns{
         display: flex;
@@ -153,7 +154,7 @@ $primari-color: #43868E;
         display: block;
     }
     div div .Contact-Us .right-side{
-        padding: 10px;
+        padding: 5px;
         margin-bottom: 20px;
     }
     div div .Contact-Us .right-side form input{
@@ -161,7 +162,7 @@ $primari-color: #43868E;
     }
     div div .Contact-Us .Capture{
         margin: 0;
-        top: 105px;
+        top: 0px;
     }
     div div .col-12.Contact-Us .shape{
         top: 4px;
@@ -199,7 +200,7 @@ $primari-color: #43868E;
         display: none;
     }  
     div div .Our-Portfolio{
-        margin-bottom: -60px;
+        margin-bottom: -90px;
     }
     div div .Our-Portfolio div .btns,
     div div .Our-Portfolio div div .rightSide .btns{
@@ -227,7 +228,6 @@ $primari-color: #43868E;
         font-size: 10px;
         padding: 3px 4%;
     }
-
     div div .Our-Clients .imgs2 img{
         height: 38px;
     }
@@ -247,8 +247,20 @@ $primari-color: #43868E;
     div div .col-12.Contact-Us .shape img{
         width: 100%;
     }
-    div div .Contact-Us .Capture{
-        display: none;
+    div div .Contact-Us .capture-div{
+        background-color: #210E3A;
+        padding: 0%;
+    }
+   div div .Contact-Us div .Capture{
+        // ---------------------------- display: none; ----------------------------
+        display: none; 
+        // margin: 0;
+        // position: relative;
+        // top: -10px;
+        // width: 95%;
+        // height: 300px;
+        // border-radius: 25px;
+        // left: 2.5%;
     }
     div div .Contact-Us .global-side{
         margin: 0;
@@ -438,11 +450,11 @@ $primari-color: #43868E;
 }
 .our-services .leftSide img:nth-of-type(2){
     position: absolute;
-    width: 129%;
-    top: -23%;
-    left: -18%;
+    width: 105%;
+    top: -11%;
+    left: -5%;
     z-index: -1;
-    height: 150%;
+    height: 122%;
 }
 
 
@@ -647,6 +659,11 @@ div div .Contact-Us .shape{
     z-index: 1;
     display: flex;
     justify-content: center;
+}
+div div .Contact-Us .capture-div{
+    background-color: #210E3A;
+    position: relative;
+    z-index: 3;
 }
 div div .Contact-Us .shape img{
     display: flex;
