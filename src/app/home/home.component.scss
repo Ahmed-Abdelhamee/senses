@@ -50,7 +50,6 @@ $primari-color: #43868E;
     }
     div div .imgs{
         margin-top: 0px;
-        margin-bottom: 40px;
     }
     div div .imgs img{
         height: 30px;
@@ -60,9 +59,6 @@ $primari-color: #43868E;
         line-height: 35px;
     }
     
-    div div div .our-services{
-        padding: 2px;
-    }
     div div div div .leftSide{
         padding: 0px;
         margin: 0px;
@@ -78,6 +74,7 @@ $primari-color: #43868E;
     }
     div div div .our-services{
         margin-bottom: 15%;
+        padding: 2px;
     }
     div div div .our-services .leftSide{
         margin-bottom: 100px;
@@ -163,6 +160,7 @@ $primari-color: #43868E;
     div div .Contact-Us .Capture{
         margin: 0;
         top: 0px;
+        height: 475px;
     }
     div div .col-12.Contact-Us .shape{
         top: 4px;
@@ -176,6 +174,11 @@ $primari-color: #43868E;
         width: fit-content;
         padding: 1px;
     }    
+    div img.light-left-page{
+        margin-top: 310px;
+        width: 80%;
+    }
+    
     div div .lightning-view .container{
         display: block;
     }
@@ -199,9 +202,6 @@ $primari-color: #43868E;
     {
         display: none;
     }  
-    div div .Our-Portfolio{
-        margin-bottom: -90px;
-    }
     div div .Our-Portfolio div .btns,
     div div .Our-Portfolio div div .rightSide .btns{
         display: flex;
@@ -247,14 +247,60 @@ $primari-color: #43868E;
     div div .col-12.Contact-Us .shape img{
         width: 100%;
     }
-    div div .Contact-Us .capture-div{
-        background-color: #210E3A;
-        padding: 0%;
+    // div div .Contact-Us .capture-div{
+    //     background-color: #210E3A;
+    //     padding: 0%;
+    // }
+    // div div .Contact-Us .global-side{
+    //     margin: 0;
+    // }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    div div .lightning-view .leftLightning,
+    div div .lightning-view .rightLightning{
+        margin-top: -19%;
     }
-   div div .Contact-Us div .Capture{
-        // ---------------------------- display: none; ----------------------------
-        display: none; 
-        // margin: 0;
+    div div .lightning-view .col-12{
+        justify-content: space-between;
+    }
+    div div .lightning-view .col-12 .card img{
+        height: 90px;
+    }
+    div div .lightning-view .col-12 .card .card-title{
+        font-size: 16px;
+    }
+    div div .lightning-view .col-12 .card .card-text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    div div div .our-services .rightSide .text2{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    div div .Our-Portfolio div div div .details{
+        font-size: 12px;
+        line-height: 28px;
+    }
+    div div .Contact-Us .Capture{
+        display: block;
+    }
+}
+
+@media screen and (max-width:575px) {
+    div div .lightning-view .col-12{
+        display: block;
+        padding: 10px;
+    }
+    div div .lightning-view .col-12 .card img{
+        height: 145px;
+        width: 41%;
+        margin-left: 33%;
+    }
+    div div .Contact-Us div .Capture{
+    // ---------------------------- display: none; ----------------------------
+    display: none; 
+    // margin: 0;
         // position: relative;
         // top: -10px;
         // width: 95%;
@@ -262,23 +308,24 @@ $primari-color: #43868E;
         // border-radius: 25px;
         // left: 2.5%;
     }
-    div div .Contact-Us .global-side{
-        margin: 0;
+    div div .Our-Portfolio .Rectangle4{
+        top: -300px;
+        width: 39%;
+        left: 50%;
     }
 }
 
 
-
 // desktop view
 .content{
-    // background-image: linear-gradient(90deg,$mainColor,$SeconadryColor);
-    background-image: linear-gradient(152deg, $mainColor, $globalColor,$mainColor, $SeconadryColor);
     padding: 10px;
     overflow: hidden;
+    background-image: linear-gradient(88deg, #1d1c2f, #1f2e45, #3d0181);
 }
 .fristPart{
     padding: 10px 5%;
     padding-right: 0%;
+    z-index: 4;
 }
 .right-side {
     position: relative;
@@ -325,12 +372,12 @@ $primari-color: #43868E;
     background: none;
     padding: 12px 67px;
     box-shadow: inset 0.2px 0.2px 1px #be00ff, inset -1px 0px 2px #00faff;
-    // box-shadow: inset 1px 0px 1px #69368A, inset -1px 0px 2px #00C6CA;
     color: #FFFFFF;
     border-radius: 30px;
     outline: none;
     transition: 1s;
     border: none;
+    z-index: 4;
 }
 #show{
     margin-bottom: 15px;
@@ -349,8 +396,11 @@ $primari-color: #43868E;
     display: flex;
     justify-content: space-around;
     margin-top: -300px;
-    margin-bottom: 100px;
+    margin-bottom: 21%;
     overflow-x: auto;
+    position: relative;
+    z-index: 4;
+
 }
 .imgs::-webkit-scrollbar{
     display: none;
@@ -367,12 +417,12 @@ $primari-color: #43868E;
     padding: 0px 5px;
 }
 
-
 // -------------------------- Our Values style --------------------------
 .lightning-view{
     position: relative;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 7%;
 }
 .leftLightning,
 .rightLightning{
@@ -383,12 +433,15 @@ $primari-color: #43868E;
     height: 500px;
     margin-top: -10%;
 }
-.rightLightning{
-    left: 50%;
+.leftLightning{
+    left: -4%;
 }
-.lightning-view .container{
+.rightLightning{
+    left: 56%;
+}
+.lightning-view .col-12{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .lightning-view .card{
     background-color: $mainColor;
@@ -396,6 +449,7 @@ $primari-color: #43868E;
     background: rgba(33, 57, 94, 0.50);
     backdrop-filter: blur(10.5px);
     margin-bottom: 40px;
+    z-index: 4;
 }
 .lightning-view .card img{
     margin-top: -44px;
@@ -424,11 +478,40 @@ $primari-color: #43868E;
     text-shadow: 0px 0px 5px black;
 }
 
+// ------- light-left-page -------
+.light-left-page{
+    width: 45%;
+    position: absolute;
+    left: -30px;
+    margin-top: 250px;
+    z-index: 2;
+}
+.light-page-left-light{
+    position: relative;
+    margin-top: -140px;
+}
+.light-page-left-light .light-left-page{
+    position: absolute;
+    margin-top: -0px;
+    width: 65%;
+    left: -30px;
+}
+.light-page-left-light .light-right-page{
+    position: absolute;
+    margin-top: -0px;
+    width: 50%;
+    left: 55%;
+    margin-top: -140px;
+}
 
 // --------------------------- Our services style      --------------------------
+.services{
+    position: relative;
+    z-index: 4;
+}
 .our-services{
     background: rgba(25, 19, 47, 0.70);
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 25px;
     padding: 30px;
     margin-bottom: 10%;
@@ -467,7 +550,6 @@ $primari-color: #43868E;
 }
 .Our-Portfolio{
     z-index: 4;
-    margin-bottom: -300px;
 }
 .Our-Portfolio .leftSide img{
     height: 480px;
@@ -549,8 +631,9 @@ $primari-color: #43868E;
 
 // -------------------------- Our Clients style --------------------------
 .Our-Clients{
-    margin-top: 10%;
     margin-bottom: 0%;
+    z-index: 4;
+    margin-top: -20%
 }
 .Our-Clients .text2{
     font-size: 41px;
@@ -596,7 +679,7 @@ $primari-color: #43868E;
     left: -5%;
     width: 55%;
     padding-top: 20px;
-    height: 600px;
+    height: 530px;
     z-index: 3;
     filter: invert(100%);
 }

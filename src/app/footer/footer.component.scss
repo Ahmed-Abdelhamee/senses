@@ -7,28 +7,32 @@
     width: 100%;
 }
 
-$mainColor: #200F2B;
-$globalColor: #042c42;
-$SeconadryColor: #5b148a;
 $primari-color: #43868E;
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     div.col-12{
         display: block;
         padding-bottom: 100px;
     }
-    div .col-sm-3{
-        margin-bottom: 5px
+    div div .content .left-content .links{
+        left: 0px;
+        font-size: 12px;
     }
-    div .col-sm-3 .senses{
-       padding: 10px 10%;
+    div div div .right-content .text,
+    div div .content .left-content .text{
+        font-size: 20px;
+        line-height: 30px;
     }
-    div div .text{
+    div div .content .left-content .links ul li{
         text-align: center;
+        left: 0px;
+        line-height: 25px;
     }
-    div div ul{
-        list-style: none;
-        padding-left: 15%;
+    div div .content .left-content .links ul li a img{
+        height: 12px;
+    }
+    div div .col-sm-3 .center-content .senses{
+        padding: 4px 2%;
     }
     div div ul .link{
         font-size: 13px;
@@ -39,13 +43,31 @@ $primari-color: #43868E;
         margin-right: 5px;
     }
 }
+@media screen and (max-width:800px) and (min-width:575px){
+    div div .content .left-content .text{
+        font-size: 12px;
+    }
+}
 
 .col-12{
     background-color: #16092B;
+}
+.container{
+    background-color: #16092B;
     padding: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 5;
+}
+.col-sm-3{
+    background:none;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    position: relative;
+    left: 10px;
 }
 
 .text{
@@ -60,7 +82,10 @@ $primari-color: #43868E;
 ul{
     list-style: none;
     padding-left: 0;
+    text-align: left;
+
 }
+
 .link,
 .Copyright{
     color: #DFF7FA;
@@ -68,16 +93,18 @@ ul{
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
     line-height: 39px;
+    display: inline-flex;
+}
+.link span img{
+    margin-right: 5px;
+}
+.icons .icon:nth-of-type(1){
+    margin-left: 17%;
 }
 .senses{
-    width: 100%;
+    height: 60px;
     margin-bottom: 25px;
-}
-.icons{
-    display: flex;
-    justify-content: center;
 }
 .icon{
     width: 30.053px;
@@ -89,6 +116,7 @@ ul{
     color: #6354c1;
     font-size: 11px;
     font-weight: 600;
+    margin-left: 5px;
 }
 
 

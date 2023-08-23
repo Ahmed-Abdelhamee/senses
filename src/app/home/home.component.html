@@ -1,4 +1,3 @@
-<app-header></app-header>
 <div class="col-12 content">
     <div class="col-12 fristPart">
         <div class="col-sm-6">
@@ -12,14 +11,18 @@
             <img src="assets/FrameMan.png" alt="">
         </div>
     </div>
-
+    <img src="assets/Vector (4).png" alt="" class="light-left-page">
+    
     <div class="col-12">
         <div class="container imgs ">
             <img src="assets/Arrow_drop_down.png" alt="layer photo" (click)="left()">
             <img src="{{item}}" *ngFor="let item of imgs" alt=""  >
             <img src="assets/Arrow_drop_down (1).png" alt="layer photo" (click)="right()">
         </div>
-
+        <div class="light-page-left-light">
+            <img src="assets/Vector (1).png" alt="" class="light-left-page">
+            <img src="assets/Vector (5).png" alt="" class="light-right-page">
+        </div>
         <div class="container">
             <p class="text1 text-center"> Our Values </p>
             <p class="text2 text-center">  Our journey to Make difference </p>
@@ -27,7 +30,7 @@
         <div class="col-12 lightning-view">
             <img src="assets/leftLightning.png" class="leftLightning" alt="">
             <img src="assets/rightLightning.png" class="rightLightning" alt="">
-            <div class="container">
+            <div class="col-12">
                 <div class="col-sm-3 card">
                     <img src="assets/lamp.png" alt="lamp">
                     <p class="card-title">Ideation</p>
@@ -52,7 +55,8 @@
             </div>
         </div>
 
-        <div class="container">
+      <div class="col-12">
+        <div class="container services">
             <p class="text1 text-center"> Our Services </p>
             <p class="text2 text-center"> We Bring You the Finest Services </p>
             <div class="text-center">
@@ -70,6 +74,7 @@
                 </div>
             </div>
         </div>
+      </div>
                   
         <div class="col-12 Our-Portfolio">
             <div class="container">
@@ -122,13 +127,15 @@
             <img src="assets/Rectangle3.png" alt="" class="Rectangle4">  
         </div>
 
-        <div class="col-12 container Our-Clients">
-            <p class="text1 text-center"> Our Clients</p>
-            <p class="text2 text-center"> They Trust Us </p>
-            <div class=" imgs imgs2" #list2 >
-                <img src="assets/Arrow_drop_down.png" class="arrow" alt="layer photo"(click)="left2(list2)">
-                <img src="{{item}}" *ngFor="let item of imgs2" alt=""  >
-                <img src="assets/Arrow_drop_down (1).png" class="arrow" alt="layer photo" (click)="right2(list2)">
+        <div class="col-12">
+            <div class="container Our-Clients">
+                <p class="text1 text-center"> Our Clients</p>
+                <p class="text2 text-center"> They Trust Us </p>
+                <div class=" imgs imgs2" #list2 >
+                    <img src="assets/Arrow_drop_down.png" class="arrow" alt="layer photo"(click)="left2(list2)">
+                    <img src="{{item}}" *ngFor="let item of imgs2" alt=""  >
+                    <img src="assets/Arrow_drop_down (1).png" class="arrow" alt="layer photo" (click)="right2(list2)">
+                </div>
             </div>
         </div>
 

@@ -24,10 +24,11 @@ $primari-color: #43868E;
         margin-bottom: -60px;
     }
     div .left-text p{
-        font-size: 17px;
+        font-size: 15px;
+        line-height: 26px;
     }
     div div img{
-        width: 111%;
+        width: 113%;
         height: 400px;
     }
     div div .list-content{
@@ -36,6 +37,9 @@ $primari-color: #43868E;
 
 }
 @media screen and (max-width:700px) {
+    div.content{
+        overflow: hidden;
+    }
     div div div .item p{
         font-size: 15px;
         padding-top: 10px;
@@ -62,7 +66,7 @@ $primari-color: #43868E;
 }
 @media screen and (max-width:400px) {
     div div div .item p{
-        font-size: 15px;
+        font-size: 12px;
     }
     div div div .item button{
         font-size: 9px;
@@ -72,18 +76,23 @@ $primari-color: #43868E;
         right: 0px;
     }
 }
-.content{
-    // background-image: linear-gradient(90deg,$mainColor,$SeconadryColor);
-    background-image: linear-gradient(130deg, $mainColor, $globalColor, $mainColor, $globalColor);
-        padding: 10px 5%;
+@media screen and (max-width:860px) and (min-width:575px){
+    div.col-12.content div.col-sm-5.left-text p{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    div div div .item p{
+        font-size: 16px;
+    }
 }
-// .svg1{
-//     position: absolute;
-//     width: 72%;
-//     top: 0px;
-//     left: 20%;
-//     z-index: 1;
-// }
+
+.content{
+    // background-image: linear-gradient(130deg, $mainColor, $globalColor, $mainColor, $globalColor);
+        padding: 10px 5%;
+        background-image: linear-gradient(88deg, #1d1c2f, #1f2e45, #3d0181);
+        overflow: hidden;
+}
+
 .svg2{
     position: absolute;
     top: 28%;
@@ -143,7 +152,7 @@ img{
 }
 .discover{
     position: relative;
-    background-color:  rgb(4, 137, 204);
+    background-color:  rgb(4 137 204 / 35%);
     float: right;
     border-radius: 25px;
     padding: 6px 37px;
@@ -155,7 +164,7 @@ img{
     display: none;
     margin-top: 15px;
     border: navajowhite;
-    box-shadow: inset 3px 2px 4px antiquewhite;
+    box-shadow: inset 1px 0.2px 2px #820082;
 }
 .discover::after{
     position: absolute;
