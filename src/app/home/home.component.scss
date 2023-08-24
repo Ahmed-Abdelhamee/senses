@@ -350,6 +350,7 @@ $primari-color: #43868E;
     font-weight: 300;
     line-height: 44px; /* 359.259% */
     letter-spacing: 2.7px;
+    z-index: 6;
 }
 .text2{
     color: #BCA7CA;
@@ -396,7 +397,7 @@ $primari-color: #43868E;
     display: flex;
     justify-content: space-around;
     margin-top: -300px;
-    margin-bottom: 21%;
+    margin-bottom: 240px;
     overflow-x: auto;
     position: relative;
     z-index: 4;
@@ -642,6 +643,7 @@ $primari-color: #43868E;
 .imgs2 {
     position: relative;
     margin-top: 20px;
+    margin-bottom: 10%;
 }
 .imgs2 img{
     margin-top: 5px;
