@@ -445,11 +445,10 @@ $primari-color: #43868E;
     justify-content: space-around;
 }
 .lightning-view .card{
-    background-color: $mainColor;
     border-radius: 47px;
     background: rgba(33, 57, 94, 0.50);
     backdrop-filter: blur(10.5px);
-    margin-bottom: 40px;
+    margin-bottom: 65px;
     z-index: 4;
 }
 .lightning-view .card img{

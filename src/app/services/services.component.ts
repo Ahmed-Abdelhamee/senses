@@ -8,7 +8,7 @@ import { DataService } from 'src/services/data.service';
 })
 export class ServicesComponent implements OnInit {
 
-  texts:string[]=[]
+  texts:any[]=[]
   constructor(private dataService:DataService) {
     this.texts=dataService.getTexts();
    }

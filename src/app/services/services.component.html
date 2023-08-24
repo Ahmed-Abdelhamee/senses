@@ -10,8 +10,8 @@
     <div class="col-12 list">
         <div  class="list-content">
             <div class="item" *ngFor="let item of texts">
-                <button class="discover">Discover</button>
-                <p class="item-style">{{item}}</p>
+                <button class="discover" [routerLink]="item.url">Discover</button>
+                <p class="item-style">{{item.text}}</p>
             </div>
         </div>
     </div>
