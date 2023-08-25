@@ -9,10 +9,10 @@
 
 $primari-color: #43868E;
 
-@media screen and (max-width:854px) {
+@media screen and (max-width:889px) {
     div.col-12{
         display: block;
-        padding-bottom: 100px;
+        padding-bottom: 30px;
     }
     div div .content .left-content .links{
         left: 0px;
@@ -22,11 +22,15 @@ $primari-color: #43868E;
     div div .content .left-content .text{
         font-size: 20px;
         line-height: 30px;
+        font-weight: 600;
     }
     div div .content .left-content .links ul li{
         text-align: center;
-        left: 0px;
         line-height: 25px;
+    }
+    div div div div div ul li .link{
+        font-size: 1.6vw;
+        line-height: 33px;
     }
     div div .content .left-content .links ul li a img{
         height: 12px;
@@ -46,14 +50,15 @@ $primari-color: #43868E;
         font-size: 10px;
     }
 }
-@media screen and (max-width:719px) and (min-width:576px){
+@media screen and (max-width:755px) and (min-width:576px){
     div .all .content div .text{
-        font-size: 2.2vw;
-        line-height: 0px;
+        font-size: 2vw;
         padding-top: 20px;
     }
+}
+@media screen and (max-width:575px){
     div div div div div ul li .link{
-        font-size: 1.8vw;
+        font-size: 13px;
     }
 }
 
