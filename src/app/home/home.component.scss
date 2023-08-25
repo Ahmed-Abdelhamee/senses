@@ -176,6 +176,10 @@ $primari-color: #43868E;
 // ---------------------------- for mobile windows---------------------------
 @media screen and (max-width:700px) {
     //  --------------------- frist part imgs --------------------
+    div div div .paragraph{
+        font-size: 15px;
+        line-height: 25px;
+    }
     div div .imgs img{
         height: 22px;
         width: fit-content;
@@ -209,6 +213,13 @@ $primari-color: #43868E;
         font-size: 15px;
         line-height: 25px;    
     }
+    // -------------------------- Our-services -------------------------
+    div div div .services .our-services .rightSide .text1{
+        padding-top: 4px;
+    }
+    div div div .services .our-services .rightSide .show{
+        margin-bottom: 4px;
+    }
     //  --------------------- Our-Portfolio --------------------
     div div .Our-Portfolio div .btns,
     div div .Our-Portfolio div div .rightSide .btns{
@@ -234,7 +245,7 @@ $primari-color: #43868E;
     div div div div .btns .show{
         margin-bottom: 10px;
         font-size: 10px;
-        padding: 3px 4%;
+        padding: 5px 4%;
     }
     // -------------------------- Our-Clients -------------------------
     div div .Our-Clients .imgs2 img{
@@ -300,6 +311,10 @@ $primari-color: #43868E;
 
 // ---------------------------- for mobils ---------------------------
 @media screen and (max-width:575px) {
+    div div div .paragraph{
+        font-size: 16px;
+        line-height: 34px;
+    }
     div div .lightning-view .col-12{
         display: block;
         padding: 10px;
@@ -310,6 +325,18 @@ $primari-color: #43868E;
         margin-left: 33%;
     }
     // ------------------Our-Portfolio ----------------
+    div div .Our-Portfolio div div .rightSide .text1{
+        padding-left: 8px;
+    }
+    div div .Our-Portfolio div div .rightSide .show{
+        margin-left: 8px;
+        font-size: 14px;
+    }
+    div div .Our-Portfolio div .btns .show{
+        font-size: 8.5px;
+        padding: 5px 3%;
+        font-weight: 400;
+    }
     div div .Our-Portfolio .Rectangle4{
         top: -300px;
         width: 39%;
@@ -335,6 +362,7 @@ $primari-color: #43868E;
         padding: 5px 6%;
     }
 }
+
 // ---------------------------- for small mobils windowa ---------------------------
 @media screen and (max-width:280px) {
     // --------------- frist part ---------------
@@ -365,9 +393,6 @@ $primari-color: #43868E;
     }
     div div .Our-Portfolio div .btns .show{
         padding: 3px 3%;
-    }
-    div div .Our-Portfolio div div .rightSide .text1{
-        padding-left: 0px;
     }
     div div .Our-Portfolio div div .rightSide .details{
         line-height: 25px;
@@ -400,6 +425,7 @@ $primari-color: #43868E;
 .right-side img{
     width: 100%;
     height: 950px;
+    margin-left: 25px;
 }
 .right-side img:nth-of-type(2){
     position: absolute;
@@ -407,7 +433,7 @@ $primari-color: #43868E;
     left: 0;
     width: 70%;
     height: 454px;
-    margin-left: 15%;
+    margin-left: calc(15% + 25px);
 }
 .text1,.title{
     color: $primari-color;
@@ -696,9 +722,10 @@ $primari-color: #43868E;
 
 // -------------------------- Our Clients style --------------------------
 .Our-Clients{
+    position: relative;
     margin-bottom: 0%;
+    margin-top: -20%;
     z-index: 4;
-    margin-top: -20%
 }
 .Our-Clients .text2{
     font-size: 41px;
