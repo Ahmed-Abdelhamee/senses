@@ -34,7 +34,9 @@ $primari-color: #43868E;
     div div .list-content{
         margin-top: 0px;
     }
-
+    div div div .item p{
+        font-size: 19px;
+    }
 }
 @media screen and (max-width:700px) {
     div.content{
@@ -65,15 +67,29 @@ $primari-color: #43868E;
     }
 }
 @media screen and (max-width:400px) {
+    .content .left-text p{
+        font-size: 3.8vw;
+        line-height: 20px;
+    }
+    .content .list{
+        padding-left: 0px;
+    }
+    .content div img{
+        height: 365px;
+    }
     div div div .item p{
-        font-size: 12px;
+        font-size: 10px;
     }
     div div div .item button{
-        font-size: 9px;
+        font-size: 8px;
         padding-left: 5px;
     }
     div div div .item button::after{
         right: 0px;
+        top: 22%;
+    }
+    .content .list .list-content .item p{
+        padding-left: 10px;
     }
 }
 @media screen and (max-width:860px) and (min-width:575px){
@@ -85,6 +101,8 @@ $primari-color: #43868E;
         font-size: 16px;
     }
 }
+
+
 
 .content{
     // background-image: linear-gradient(130deg, $mainColor, $globalColor, $mainColor, $globalColor);
@@ -107,6 +125,10 @@ $primari-color: #43868E;
     flex-shrink: 0;
     float: right;
     margin-right: -5%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
 }
 .left-text{
     padding: 100px 5px;

@@ -12,8 +12,9 @@ $globalColor: #042c42;
 $SeconadryColor: #5b148a;
 $primari-color: #43868E;
 
-// for small windows
+// ---------------------------- for little big windows ----------------------------
 @media screen and (max-width:1000px) {
+    //  --------------------- frist part style --------------------
     div.col-12{
         padding: 0px;
     }
@@ -48,6 +49,7 @@ $primari-color: #43868E;
     div div .right-side img:nth-of-type(1){
         height: 450px;
     }
+    //  --------------------- imgs div --------------------
     div div .imgs{
         margin-top: 0px;
     }
@@ -58,7 +60,6 @@ $primari-color: #43868E;
         font-size: 20px;
         line-height: 35px;
     }
-    
     div div div div .leftSide{
         padding: 0px;
         margin: 0px;
@@ -72,15 +73,13 @@ $primari-color: #43868E;
         font-size: 14px;
         line-height: 22px;    
     }
+    //  --------------------- our services --------------------
     div div div .our-services{
         margin-bottom: 15%;
         padding: 2px;
     }
     div div div .our-services .leftSide{
         margin-bottom: 100px;
-    }
-    div div .Our-Portfolio div div .leftSide{
-        height: 360px;
     }
     div div div .our-services .leftSide img{
         height: 100%;
@@ -96,6 +95,7 @@ $primari-color: #43868E;
         padding-left: 2%;
         top: -15px;
     }
+    //  --------------------- our Portfolio --------------------
     div div div div .btns{
         display: flex;
         justify-content: space-between;
@@ -104,6 +104,9 @@ $primari-color: #43868E;
         margin-bottom: 10px;
         font-size: 9px;
         padding: 10px 5%;
+    }
+    div div .Our-Portfolio div div .leftSide{
+        height: 360px;
     }
     div div .Our-Portfolio div div div div img{
         height: 340px;
@@ -122,7 +125,6 @@ $primari-color: #43868E;
     div div .Our-Portfolio div div .rightSide{
         padding-top: 5%;
     }
-    
     div div .Our-Portfolio div div div div button .imgLeft,
     div div .Our-Portfolio div div div div button .imgRight{
         height: 21px;
@@ -134,21 +136,25 @@ $primari-color: #43868E;
     div div .Our-Portfolio div div div div button .imgRight{
         left: 74%;
     }
-    div div .Contact-Us .global-side{
-        margin-left: 0px;
-    }
+    //  --------------------- our clients --------------------
     div div .Our-Clients div img{
         height: 40px;
     }
     div div .Our-Clients div img:nth-of-type(1){
         height: 20px;
         margin-top: 15px;
+        width: 27px;
     }
     div div .Our-Clients div img:nth-of-type(7){
         height: 20px;
         margin-top: 15px;
         left: 20px;
         display: block;
+        width: 27px;
+    }
+    //  --------------------- contact us --------------------
+    div div .Contact-Us .global-side{
+        margin-left: 0px;
     }
     div div .Contact-Us .right-side{
         padding: 5px;
@@ -165,10 +171,11 @@ $primari-color: #43868E;
     div div .col-12.Contact-Us .shape{
         top: 4px;
     }
-    
 }
-// for mobile windows
+
+// ---------------------------- for mobile windows---------------------------
 @media screen and (max-width:700px) {
+    //  --------------------- frist part imgs --------------------
     div div .imgs img{
         height: 22px;
         width: fit-content;
@@ -178,7 +185,14 @@ $primari-color: #43868E;
         margin-top: 310px;
         width: 80%;
     }
-    
+    div div .imgs img:nth-of-type(6),
+    div div .imgs img:nth-of-type(7),
+    div div .imgs img:nth-of-type(8),
+    div div .imgs img:nth-of-type(9)
+    {
+        display: none;
+    }  
+    //  --------------------- our value cards --------------------
     div div .lightning-view .container{
         display: block;
     }
@@ -195,13 +209,7 @@ $primari-color: #43868E;
         font-size: 15px;
         line-height: 25px;    
     }
-    div div .imgs img:nth-of-type(6),
-    div div .imgs img:nth-of-type(7),
-    div div .imgs img:nth-of-type(8),
-    div div .imgs img:nth-of-type(9)
-    {
-        display: none;
-    }  
+    //  --------------------- Our-Portfolio --------------------
     div div .Our-Portfolio div .btns,
     div div .Our-Portfolio div div .rightSide .btns{
         display: flex;
@@ -228,8 +236,9 @@ $primari-color: #43868E;
         font-size: 10px;
         padding: 3px 4%;
     }
+    // -------------------------- Our-Clients -------------------------
     div div .Our-Clients .imgs2 img{
-        height: 38px;
+        height: 33px;
     }
     div div .Our-Clients .imgs2 img:last-of-type,
     div div .Our-Clients .imgs2 img:nth-of-type(1){
@@ -241,6 +250,7 @@ $primari-color: #43868E;
     div div .Our-Clients .imgs2 img:nth-of-type(1){
         margin-left: 0px;
     }
+    // -------------------------- Contact-Us -------------------------
     div div .col-12.Contact-Us .shape{
         top: 6px;
     }
@@ -256,6 +266,7 @@ $primari-color: #43868E;
     // }
 }
 
+// ---------------------------- for special windows---------------------------
 @media screen and (min-width:576px) and (max-width:767px) {
     div div .lightning-view .leftLightning,
     div div .lightning-view .rightLightning{
@@ -287,6 +298,7 @@ $primari-color: #43868E;
     }
 }
 
+// ---------------------------- for mobils ---------------------------
 @media screen and (max-width:575px) {
     div div .lightning-view .col-12{
         display: block;
@@ -297,10 +309,20 @@ $primari-color: #43868E;
         width: 41%;
         margin-left: 33%;
     }
+    // ------------------Our-Portfolio ----------------
+    div div .Our-Portfolio .Rectangle4{
+        top: -300px;
+        width: 39%;
+        left: 50%;
+    }
+    div div div .Our-Clients{
+        padding: 0%;
+    }
+    // ---------------- Contact-Us ----------------
     div div .Contact-Us div .Capture{
-    // ---------------------------- display: none; ----------------------------
-    display: none; 
-    // margin: 0;
+        // ------------ display: none; ------------
+        display: none; 
+        // margin: 0;
         // position: relative;
         // top: -10px;
         // width: 95%;
@@ -308,15 +330,60 @@ $primari-color: #43868E;
         // border-radius: 25px;
         // left: 2.5%;
     }
-    div div .Our-Portfolio .Rectangle4{
-        top: -300px;
-        width: 39%;
-        left: 50%;
+    div div .Contact-Us div .right-side form .send{
+        font-size: 13.745px;
+        padding: 5px 6%;
+    }
+}
+// ---------------------------- for small mobils windowa ---------------------------
+@media screen and (max-width:280px) {
+    // --------------- frist part ---------------
+    div .fristPart div .text2{
+        font-size: 34px;
+        line-height: 45px;
+    }
+    div .fristPart div .text2{
+        line-height: 28px;
+    }
+    div div .imgs img,
+    div div div .Our-Clients .imgs2 img{
+        padding: 3px;
+    }
+    // --------------- our services ---------------
+    div div div .services .text2{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    div div div div .our-services .rightSide .text2{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    // --------------- our portfolio ---------------
+    div div .Our-Portfolio .text2{
+        font-size: 13px;
+        line-height: 30px;
+    }
+    div div .Our-Portfolio div .btns .show{
+        padding: 3px 3%;
+    }
+    div div .Our-Portfolio div div .rightSide .text1{
+        padding-left: 0px;
+    }
+    div div .Our-Portfolio div div .rightSide .details{
+        line-height: 25px;
+        font-size: 12px;
+    }
+    div div .Our-Portfolio div div .rightSide .show{
+        font-size: 12px;
+        padding: 7px 25px;
+    }
+    // ----------------------- Contact-Us ------------------
+    div div .Contact-Us .shape img.shape{
+        margin: 35px -22px;
     }
 }
 
-
-// desktop view
+// ---------------------------- desktop view ----------------------------
 .content{
     padding: 10px;
     overflow: hidden;
@@ -389,6 +456,7 @@ $primari-color: #43868E;
 .container{
     margin-bottom: 10%;
 }
+// ---------------------------- frist div imgs ----------------------------
 .imgs{
     width: 100%;
     background-color: #fff;
@@ -418,7 +486,7 @@ $primari-color: #43868E;
     padding: 0px 5px;
 }
 
-// -------------------------- Our Values style --------------------------
+// -------------------------- Our Values style & cards --------------------------
 .lightning-view{
     position: relative;
     padding: 0px;
@@ -477,7 +545,6 @@ $primari-color: #43868E;
     padding-bottom: 25px;
     text-shadow: 0px 0px 5px black;
 }
-
 // ------- light-left-page -------
 .light-left-page{
     width: 45%;
@@ -504,7 +571,7 @@ $primari-color: #43868E;
     margin-top: -140px;
 }
 
-// --------------------------- Our services style      --------------------------
+// --------------------------- Our services style ---------------------------
 .services{
     position: relative;
     z-index: 4;
@@ -539,7 +606,6 @@ $primari-color: #43868E;
     z-index: -1;
     height: 122%;
 }
-
 
 // -------------------------- Our Portfolio style --------------------------
 .Our-Portfolio .leftSide{
@@ -628,7 +694,6 @@ $primari-color: #43868E;
     transform: rotate(180deg)
 }
 
-
 // -------------------------- Our Clients style --------------------------
 .Our-Clients{
     margin-bottom: 0%;
@@ -660,7 +725,6 @@ $primari-color: #43868E;
 //     z-index: -1;
 //     width: 0%;
 // }
-
 
 // -------------------------- Our Contact-US style --------------------------
 .Contact-Us{

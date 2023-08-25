@@ -9,7 +9,7 @@
 
 $primari-color: #43868E;
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:854px) {
     div.col-12{
         display: block;
         padding-bottom: 100px;
@@ -42,17 +42,25 @@ $primari-color: #43868E;
         margin-left: -10px;
         margin-right: 5px;
     }
+    div .all .content .center-content .Copyright{
+        font-size: 10px;
+    }
 }
-@media screen and (max-width:800px) and (min-width:575px){
-    div div .content .left-content .text{
-        font-size: 12px;
+@media screen and (max-width:719px) and (min-width:576px){
+    div .all .content div .text{
+        font-size: 2.2vw;
+        line-height: 0px;
+        padding-top: 20px;
+    }
+    div div div div div ul li .link{
+        font-size: 1.8vw;
     }
 }
 
 .col-12{
     background-color: #16092B;
 }
-.container{
+.all{
     background-color: #16092B;
     padding: 25px;
     display: flex;
