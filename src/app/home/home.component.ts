@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { faCaretLeft,faCaretRight,faChevronCircleLeft,faChevronCircleRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,10 @@ import * as $ from 'jquery';
 })
 export class HomeComponent implements OnInit {
 
+  faCaretLeft=faCaretLeft;
+  faCaretRight=faCaretRight;
+  faChevronCircleLeft=faChevronCircleLeft;
+  faChevronCircleRight=faChevronCircleRight;
   constructor() { }
 
   imgs:string[]=["assets/Graphic_Elements.png","assets/Graphic_Elements (2).png","assets/Graphic_Elements (1).png","assets/Graphic_Elements (3).png","assets/image 1.png","assets/Asset 8.png","assets/Asset 9.png","assets/Asset 11.png"]

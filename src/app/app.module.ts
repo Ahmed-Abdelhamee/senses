@@ -13,8 +13,10 @@ import { DigitalComponent } from './digital/digital.component';
 import { ContactComponent } from './contact/contact.component';
 import { TrackingComponent } from './tracking/tracking.component';
 import { RfidComponent } from './rfid/rfid.component';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-@NgModule({
+@NgModule({ 
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -30,7 +32,8 @@ import { RfidComponent } from './rfid/rfid.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

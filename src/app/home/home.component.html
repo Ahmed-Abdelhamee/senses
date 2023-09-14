@@ -1,7 +1,7 @@
 <div class="col-12 content">
     <div class="col-12">
         <div class="all" style="text-align: center;margin-top: 25px;">
-            <i class="fa-solid fa-quote-left"></i>
+            <!-- <i class="fa-solid fa-quote-left"></i> -->
             <p style="color: #E2D4FF;font-size: 1.1rem; line-height: 1.8;">Connecting ideas, people, and machines to create a<br>
                  symphony of innovation. That's the magic of technology.</p>
 
@@ -28,9 +28,9 @@
     <div class="col-12">
         <!-- imgs div -->
         <div class="container imgs ">
-            <img src="assets/Arrow_drop_down.png" alt="layer photo" (click)="left()">
+            <fa-icon [icon]="faCaretLeft" (click)="left()" class="arrow"></fa-icon>
             <img src="{{item}}" *ngFor="let item of imgs" alt=""  >
-            <img src="assets/Arrow_drop_down (1).png" alt="layer photo" (click)="right()">
+            <fa-icon [icon]="faCaretRight" (click)="right()" class="arrow"></fa-icon>
         </div>
         <!-- Our Values & cards -->
         <div class="light-page-left-light">
@@ -116,10 +116,11 @@
                               </div>
                             </div>
                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                              <img src="assets/Frame 25.png" class="imgLeft" alt="">
+                              <!-- <img src="assets/Frame 25.png" class="imgLeft" alt=""> -->
+                                <fa-icon [icon]="faChevronCircleLeft" class="imgLeft"></fa-icon>
                             </button>
                             <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                              <img src="assets/Frame 20.png" class="imgRight" alt=""> 
+                              <fa-icon [icon]="faChevronCircleRight" class="imgRight"></fa-icon>
                             </button>
                         </div>
                     </div>
@@ -146,9 +147,9 @@
                 <p class="text1 text-center"> Our Clients</p>
                 <p class="text2 text-center"> They Trust Us </p>
                 <div class=" imgs imgs2" #list2 >
-                    <img src="assets/Arrow_drop_down.png" class="arrow" alt="layer photo"(click)="left2(list2)">
+                    <fa-icon [icon]="faCaretLeft" (click)="left2(list2)" class="arrow"></fa-icon>
                     <img src="{{item}}" *ngFor="let item of imgs2" alt=""  >
-                    <img src="assets/Arrow_drop_down (1).png" class="arrow" alt="layer photo" (click)="right2(list2)">
+                    <fa-icon [icon]="faCaretRight" (click)="right2(list2)" class="arrow"></fa-icon>
                 </div>
             </div>
         </div>

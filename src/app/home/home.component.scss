@@ -56,6 +56,9 @@ $primari-color: #43868E;
     div div .imgs img{
         height: 30px;
     }
+    div div .imgs .arrow{
+        padding-top: 5px;
+    }
     div div div .text2.text-center{
         font-size: 20px;
         line-height: 35px;
@@ -127,30 +130,19 @@ $primari-color: #43868E;
     }
     div div .Our-Portfolio div div div div button .imgLeft,
     div div .Our-Portfolio div div div div button .imgRight{
-        height: 21px;
-        width: 22px;
         margin: 0px;
-        left: -10px;
-        top: 46%;
+        left: -16px;
+        top: 47%;
     }
     div div .Our-Portfolio div div div div button .imgRight{
-        left: 74%;
+        left: 92%;
     }
     //  --------------------- our clients --------------------
     div div .Our-Clients div img{
         height: 40px;
     }
-    div div .Our-Clients div img:nth-of-type(1){
-        height: 20px;
-        margin-top: 15px;
-        width: 27px;
-    }
-    div div .Our-Clients div img:nth-of-type(7){
-        height: 20px;
-        margin-top: 15px;
-        left: 20px;
-        display: block;
-        width: 27px;
+    div div .Our-Clients .imgs2 .arrow{
+        padding-top: 8px;
     }
     //  --------------------- contact us --------------------
     div div .Contact-Us .global-side{
@@ -196,6 +188,9 @@ $primari-color: #43868E;
     {
         display: none;
     }  
+    div div .imgs .arrow{
+        padding-top: 3px;
+    }
     //  --------------------- our value cards --------------------
     div div .lightning-view .container{
         display: block;
@@ -251,13 +246,6 @@ $primari-color: #43868E;
     div div .Our-Clients .imgs2 img{
         height: 33px;
     }
-    div div .Our-Clients .imgs2 img:last-of-type,
-    div div .Our-Clients .imgs2 img:nth-of-type(1){
-        margin-left: -8px;
-        height: 27px;
-        width: 36px;
-        margin-top: 10px;
-    }
     div div .Our-Clients .imgs2 img:nth-of-type(1){
         margin-left: 0px;
     }
@@ -279,6 +267,13 @@ $primari-color: #43868E;
 
 // ---------------------------- for special windows---------------------------
 @media screen and (min-width:576px) and (max-width:767px) {
+    div div .imgs img:nth-of-type(6),
+    div div .imgs img:nth-of-type(7),
+    div div .imgs img:nth-of-type(8),
+    div div .imgs img:nth-of-type(9)
+    {
+        display: none;
+    }  
     div div .lightning-view .leftLightning,
     div div .lightning-view .rightLightning{
         margin-top: -19%;
@@ -345,6 +340,13 @@ $primari-color: #43868E;
     div div div .Our-Clients{
         padding: 0%;
     }
+    div div .Our-Portfolio div div div div button .imgLeft,
+    div div .Our-Portfolio div div div div button .imgRight{
+        left: 3px;
+    }
+    div div .Our-Portfolio div div div div button .imgRight{
+        left: 65%;
+    }
     // ---------------- Contact-Us ----------------
     div div .Contact-Us div .Capture{
         // ------------ display: none; ------------
@@ -362,8 +364,25 @@ $primari-color: #43868E;
         padding: 5px 6%;
     }
 }
-
 // ---------------------------- for small mobils windowa ---------------------------
+@media screen and (max-width:390px) {
+    div div .imgs img:nth-of-type(5),
+    div div .imgs img:nth-of-type(6),
+    div div .imgs img:nth-of-type(7),
+    div div .imgs img:nth-of-type(8),
+    div div .imgs img:nth-of-type(9)
+    {
+        display: none;
+    }  
+    // ------------------Our-Portfolio ----------------
+    div div .Our-Portfolio div div div div button .imgLeft,
+    div div .Our-Portfolio div div div div button .imgRight{
+        left: 0px;
+    }
+    div div .Our-Portfolio div div div div button .imgRight{
+        left: 52%;
+    }
+}
 @media screen and (max-width:280px) {
     // --------------- frist part ---------------
     div .fristPart div .text2{
@@ -505,12 +524,17 @@ $primari-color: #43868E;
     height: 40px;
     margin-top: 5px;
 }
-.imgs img:nth-of-type(1),
-.imgs img:last-of-type{
-    height: 35px;
-    width: 35px;
-    padding: 0px 5px;
+.imgs .arrow{
+    position: relative;
+    z-index: 6;
+    padding-top: 9px;
 }
+// .imgs img:nth-of-type(1),
+// .imgs img:last-of-type{
+//     height: 35px;
+//     width: 35px;
+//     padding: 0px 5px;
+// }
 
 // -------------------------- Our Values style & cards --------------------------
 .lightning-view{
@@ -651,13 +675,13 @@ $primari-color: #43868E;
 .Our-Portfolio .leftSide .imgLeft,
 .Our-Portfolio .leftSide .imgRight{
     position: absolute;
-    top: 50%;
-    height: 30px;
-    width: 30px;
-    left: 0%;
+    left: 25%;
+    margin: 0px;
+    font-size: 20px;
+    color: #8c4ed1;
 }
 .Our-Portfolio .leftSide .imgRight{
-    left: 57%;
+    left: 62%;
 }
 .Our-Portfolio .container .text2{
     font-size: 30px;
@@ -740,11 +764,17 @@ $primari-color: #43868E;
     margin-top: 5px;
     height: 90px;
 }
-.imgs2 img:nth-of-type(1),
-.imgs2 img:last-of-type{
-    margin-top: 30px;
-    width: 4%;
-    height: 35px;
+// .imgs2 img:nth-of-type(1),
+// .imgs2 img:last-of-type{
+//     margin-top: 30px;
+//     width: 4%;
+//     height: 35px;
+// }
+.imgs2 .arrow{
+    position: relative;
+    z-index: 6;
+    padding-top: 32px;
+    font-size: 19px;
 }
 // for side animation
 // .imgs2 img:nth-of-type(2){

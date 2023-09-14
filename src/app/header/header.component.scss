@@ -29,8 +29,20 @@ $primari-color: #43868E;
     div nav div .logo3 img{
         margin-left: 10px;
     }
-    div nav .links li a{
-        margin-left: 19px;
+    .links .dropdownlinks{
+        width: auto;
+        text-align: left;
+    }
+    .dropdownlinks .dropdown-menu{
+        margin-right: 0px;
+    }
+    .dropdown-menu .dropdown-item{
+        text-align: left;
+    }
+    div nav .links li .nav-link{
+        padding-left: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 @media screen and (max-width:700px) {
@@ -86,26 +98,9 @@ $primari-color: #43868E;
     div .navbar-dark .navbar-toggler{
         font-size: 1rem;
     }
-}
-.navbar-nav .dropdown-menu 
-{
-    background-color: #8944ce;
-    text-transform: capitalize;
-    min-width: 8rem
-}
-.dropdown-item {
-    color: #340066 !important;
-}
-.dropdown-item:hover
-{
-    background-color: #9E56E4 !important;
-    color: #fff !important;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    .dropdown-menu .dropdown-item{
+        text-align: left;
+    }
 }
 
 
@@ -151,10 +146,46 @@ span{
 .navbar-toggler{
     color: #ffffff;
 }
+.active{
+    background-color: #ba05c5;
+    border-radius: 5px;
+}
+.navbar-nav .dropdown-menu 
+{
+    background-color: #8944ce;
+    background-color: #ba05c5; /* the new dropdown-menu color */
+    text-transform: capitalize;
+    // min-width: 8rem;
+    min-width: 0px !important;
+
+}
+.dropdown-item {
+    color: #340066 !important;
+    text-align: center;
+    padding: 5px 22px;
+}
+.dropdown-item:hover
+{
+    background-color: #9E56E4 !important;
+    background-color: #e200ef !important;/* the new dropdown-menu color hover*/
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 .navbar-dark .navbar-nav .nav-link {
-    margin-left: 25px;
+    margin-right: 15px;
     color: white;
     font-weight: 400;
+    padding: 7px 15px;
+}
+// special class to edit dorpdown link
+.dropdownlinks{
+    width: 119px;
+    text-align: center;
 }
 
 .Frame img{

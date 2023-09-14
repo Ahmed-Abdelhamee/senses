@@ -13,8 +13,8 @@
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <span class="logo3"><img src="assets/Layer_1.png" alt=""></span>
           <ul class="navbar-nav links">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" routerLink="/services" role="button" data-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown dropdownlinks">
+                <a class="nav-link dropdown-toggle " routerLink="/services" [routerLinkActive]="'active'" role="button" data-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
                 <div class="dropdown-menu">
@@ -26,10 +26,10 @@
                 </div>
               </li>
             <li class="nav-item ">
-              <a class="nav-link" routerLink="/#">Protfolio </a>
+              <a class="nav-link" routerLink="/#" [routerLinkActive]="'active'">Protfolio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/contact">Contact</a>
+              <a class="nav-link" routerLink="/contact" [routerLinkActive]="'active'">Contact</a>
             </li>
           </ul>
         </div>
