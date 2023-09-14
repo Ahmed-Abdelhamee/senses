@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isServicesActive = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleServicesActive() {
+    this.isServicesActive = !this.isServicesActive;
+  }
 }
