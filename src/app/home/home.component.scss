@@ -54,10 +54,10 @@ $primari-color: #43868E;
         margin-top: 0px;
     }
     div div .imgs img{
-        height: 30px;
+        height: 27px;
     }
     div div .imgs .arrow{
-        padding-top: 5px;
+        padding-top: 6px;
     }
     div div div .text2.text-center{
         font-size: 20px;
@@ -377,7 +377,7 @@ $primari-color: #43868E;
     // ------------------Our-Portfolio ----------------
     div div .Our-Portfolio div div div div button .imgLeft,
     div div .Our-Portfolio div div div div button .imgRight{
-        left: 0px;
+        left: 2px;
     }
     div div .Our-Portfolio div div div div button .imgRight{
         left: 52%;
@@ -521,13 +521,14 @@ $primari-color: #43868E;
 }
 .imgs img{
     // width: 25%;
-    height: 40px;
+    height: 37px;
     margin-top: 5px;
 }
 .imgs .arrow{
     position: relative;
     z-index: 6;
-    padding-top: 9px;
+    padding-top: 11px;
+    font-size: 18px;
 }
 // .imgs img:nth-of-type(1),
 // .imgs img:last-of-type{
@@ -675,13 +676,13 @@ $primari-color: #43868E;
 .Our-Portfolio .leftSide .imgLeft,
 .Our-Portfolio .leftSide .imgRight{
     position: absolute;
-    left: 25%;
+    left: 26%;
     margin: 0px;
     font-size: 20px;
     color: #8c4ed1;
 }
 .Our-Portfolio .leftSide .imgRight{
-    left: 62%;
+    left: 64%;
 }
 .Our-Portfolio .container .text2{
     font-size: 30px;
